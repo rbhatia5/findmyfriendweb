@@ -2,6 +2,7 @@
 var express = require("express");
 var logfmt = require("logfmt");
 var app = express();
+var data;
 
 /*var mongo = require('mongodb');
 
@@ -24,13 +25,14 @@ app.configure(function(){
 
 app.post('/dropdata', function(req, res) {
 	console.log(req.body);
+	data = req.body;
 	res.send(req.body);
 	
 });
 
 app.get('/pulldata' , function(req, res) {
 	console.log(req.body);
-	res.send(JSON.stringify({'foo': bar, 'test': hello}));
+	res.send({'foo': bar, 'test': hello});
 });
 
 app.get('/', function(req,res) {
