@@ -3,7 +3,7 @@ var express = require("express");
 var logfmt = require("logfmt");
 var app = express();
 
-var mongo = require('mongodb');
+/*var mongo = require('mongodb');
 
 var mongoUri = process.env.MONGOLAB_URI || process.env.MONGOHQ_URL || 'mongodb://localhost/mydb';
 
@@ -13,7 +13,7 @@ mongo.Db.connect(mongoUri, function(err, db) {
 			
 		});
 	});
-});
+});*/
 
 
 app.use(logfmt.requestLogger());
