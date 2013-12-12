@@ -35,7 +35,7 @@ app.get('/1/pulldata' , function(req, res) {
 
 app.get('/', function(req,res) {
 	res.send("Hello World!");
-});h
+});
 
 var port = process.env.PORT || 5000;
 app.listen(port, function() {
