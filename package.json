@@ -1,0 +1,20 @@
+{
+  "name": "findmyfriend",
+  "version": "0.0.1",
+  "description": "Web Service to Mediate Data Transfer from Findee to Finder",
+  "main": "web.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "heroku",
+    "web",
+    "mediation"
+  ],
+  "author": "rahul-bhatia",
+  "license": "MIT",
+  "dependencies": {
+    "logfmt": "~0.17.0",
+    "express": "~3.4.7"
+  }
+}
