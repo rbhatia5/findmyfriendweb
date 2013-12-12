@@ -2,7 +2,7 @@
 var express = require("express");
 var logfmt = require("logfmt");
 var app = express();
-var data;
+var data = {foo: 'bar'};
 
 /*var mongo = require('mongodb');
 
@@ -32,7 +32,7 @@ app.post('/dropdata', function(req, res) {
 
 app.get('/pulldata' , function(req, res) {
 	console.log(req.body);
-	res.send("testing response to pull data");
+	res.send(data);
 });
 
 app.get('/', function(req,res) {
