@@ -22,15 +22,15 @@ app.configure(function(){
 	app.use(express.bodyParser());
 });
 
-app.put('/1/dropdata', function(req, res) {
+app.post('/dropdata', function(req, res) {
 	console.log(req.body);
 	res.send("okay");
 	
 });
 
-app.get('/1/pulldata' , function(req, res) {
+app.get('/pulldata' , function(req, res) {
 	console.log(req.body);
-	res.send("grabbing data");
+	res.send(JSON.stringify({'foo': bar, 'test': hello}));
 });
 
 app.get('/', function(req,res) {
