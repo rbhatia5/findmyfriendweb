@@ -32,7 +32,7 @@ app.post('/dropdata', function(req, res) {
 
 app.get('/pulldata' , function(req, res) {
 	console.log(req.body);
-	res.send({'foo': bar, 'test': hello});
+	res.send("testing response to pull data");
 });
 
 app.get('/', function(req,res) {
