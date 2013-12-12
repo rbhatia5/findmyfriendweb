@@ -24,7 +24,7 @@ app.configure(function(){
 
 app.post('/dropdata', function(req, res) {
 	console.log(req.body);
-	res.send(req.body.foo);
+	res.send(req.body);
 	
 });
 
